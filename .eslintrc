@@ -6,11 +6,13 @@
     "prettier",
     "prettier/react",
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:flowtype/recommended"
   ],
   "plugins": [
     "react",
-    "prettier"
+    "prettier",
+    "flowtype"
   ],
   "parser": "babel-eslint",
   "parserOptions": {
@@ -24,7 +26,14 @@
     "browser": true,
     "commonjs": true,
     "node": true,
-    "es6": true
+    "es6": true,
+    "jest": true,
+    "mocha": true
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
   },
   "rules": {
     "prettier/prettier": [
